@@ -80,10 +80,6 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.SqlServer.Types, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\..\..\_RepoConfig\SolutionFiles\packages\Microsoft.SqlServer.Types.10.50.1600.1\lib\Net20\Microsoft.SqlServer.Types.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -102,8 +98,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Algorithms\FeatureMatchScorers\MatchScoreResults\MatchScoreNumberPenaltyResult.cs" />
+    <Compile Include="Algorithms\FeatureMatchScorers\MatchScoreResults\MatchScorePenalty.cs" />
     <Compile Include="Algorithms\FeatureMatchScorers\MatchScoreResults\MatchScoreResult.cs" />
-    <Compile Include="Algorithms\FeatureMatchScorers\MatchScoreResults\MatchScorePenaltyResult.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
