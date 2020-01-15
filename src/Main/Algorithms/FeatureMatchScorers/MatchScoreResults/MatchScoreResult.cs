@@ -27,7 +27,10 @@ namespace USC.GISResearchLab.Geocoding.Core.Algorithms.FeatureMatchScorers.Match
                 {
                     foreach (MatchScorePenaltyResult penalty in MatchScorePenaltyResults)
                     {
-                        ret -= penalty.PenaltyValue;
+                        if (penalty.PenaltyValue > 0)
+                        {
+                            ret -= penalty.PenaltyValue;
+                        }
                     }
                 }
                 return ret;
